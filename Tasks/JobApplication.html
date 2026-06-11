@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend><h1>Job Application Form</h1></legend>
+        <table>
+          <tr>
+            <td>
+              <label for="fn">First Name : </label>
+            </td>
+            <td><input type="text" name="firstName" id="fn" /></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="ln">Last Name : </label>
+            </td>
+            <td><input type="text" name="lastName" id="ln" /></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="em">Email : </label>
+            </td>
+            <td><input type="email" name="email" id="em" /></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="ph">Phone Number : </label>
+            </td>
+            <td><input type="tel" name="phoneNumber" id="ph" /></td>
+          </tr>
+          <tr>
+            <td><label for="dob">Date of Birth : </label></td>
+            <td><input type="date" name="dob" id="dob" /></td>
+          </tr>
+          <tr>
+            <td><label for="gen">Gender : </label></td>
+            <td>
+              <input type="radio" name="gender" id="gen" />Male
+              <input type="radio" name="gender" id="gen" />Female
+            </td>
+          </tr>
+          <tr>
+            <td><label for="ad">Address : </label></td>
+            <td><textarea name="address" id="ad" rows="5px"></textarea></td>
+          </tr>
+          <tr>
+            <td><label for="city">City : </label></td>
+            <td>
+              <input type="text" name="city" id="city" list="city" />
+              <datalist id="city">
+                <option value="Chennai">Chennai</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Hyderbad">Hyderbad</option>
+                <option value="Kochin">Kochin</option>
+              </datalist>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="state">State : </label></td>
+            <td><input type="text" name="state" id="state" /></td>
+          </tr>
+          <tr>
+            <td><label for="pc">Pin Code : </label></td>
+            <td><input type="number" name="pincode" id="pc" /></td>
+          </tr>
+          <tr>
+            <td><label for="pa">Position Applied For : </label></td>
+            <td><input type="text" name="positonApplied" id="pa" /></td>
+          </tr>
+          <tr>
+            <td><label for="up">Upload Resume : </label></td>
+            <td><input type="file" name="resume" id="up" /></td>
+          </tr>
+          <tr>
+            <td><label for="lp">LinkedIn Profile : </label></td>
+            <td><input type="text" name="linkedin" id="lp" /></td>
+          </tr>
+          <tr>
+            <td><label for="asd">Available Start Date : </label></td>
+            <td><input type="date" name="date" id="asd" /></td>
+          </tr>
+          <tr>
+            <td><label for="sal">Expected Salary : </label></td>
+            <td><input type="number" name="salary" id="sal" /></td>
+          </tr>
+          <tr>
+            <td><label for="will">Willing to Relocate : </label></td>
+            <td>
+              <select name="willing" id="will">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><button>Submit Application</button></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>

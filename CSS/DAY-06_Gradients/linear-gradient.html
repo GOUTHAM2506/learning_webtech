@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      .gradient {
+        width: 100%;
+        height: 80vh;
+        border: 3px solid black;
+        margin-bottom: 30px;
+      }
+      #gradient1 {
+        background: linear-gradient(to bottom, red, yellow);
+      }
+      #gradient2 {
+        background: linear-gradient(to top, red, yellow);
+      }
+      #gradient3 {
+        background: linear-gradient(to right, violet, purple, hotpink);
+      }
+      #gradient4 {
+        background: linear-gradient(to left, white, black);
+      }
+      #gradient5 {
+        background: linear-gradient(to top right, skyblue, blue);
+      }
+      #gradient6 {
+        background: linear-gradient(to bottom right, #1a3263, #547792);
+      }
+      #gradient7 {
+        /* background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59); */
+        background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+      }
+      #gradient8 {
+        background: repeating-linear-gradient(blue 10%, skyblue 20%, navy 30%);
+      }
+      #gradient9 {
+        background: repeating-linear-gradient(to right, red 10%, yellow 20%);
+      }
+      #gradient10 {
+        /* background: linear-gradient(#FF9933 0%, #FF9933 33%, white 33%, white 66%, #138808 66%); */
+        background: linear-gradient(
+          #ff9933 0% 33%,
+          white 33% 66%,
+          #138808 66% 100%
+        );
+        position: relative;
+      }
+      img {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: 37%;
+        left: 43%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>1. Linear Gradient in CSS</h1>
+    <div class="gradient" id="gradient1">
+      <h1>Linear Gradient</h1>
+      <h2>By default direction is top to bottom</h2>
+    </div>
+    <div class="gradient" id="gradient2"></div>
+    <div class="gradient" id="gradient3"></div>
+    <div class="gradient" id="gradient4"></div>
+    <div class="gradient" id="gradient5"></div>
+    <div class="gradient" id="gradient6"></div>
+    <div class="gradient" id="gradient7"></div>
+    <div class="gradient" id="gradient8"></div>
+    <div class="gradient" id="gradient9"></div>
+    <div class="gradient" id="gradient10">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/1/17/Ashoka_Chakra.svg"
+        alt=""
+      />
+    </div>
+  </body>
+</html>

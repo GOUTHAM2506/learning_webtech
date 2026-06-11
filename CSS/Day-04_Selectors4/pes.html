@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #para::first-letter {
+        color: blue;
+        font-size: 50px;
+      }
+      #para::first-line {
+        background-color: hotpink;
+      }
+      #para::after {
+        content: "Content Added With the Help of CSS";
+        color: red;
+      }
+      #para::before {
+        content: "Content added before the paragraph with the help of CSS";
+        color: blue;
+      }
+      li {
+        color: green;
+      }
+      li::marker {
+        color: brown;
+      }
+      #para2::selection {
+        background-color: orange;
+        color: white;
+      }
+      input{
+        caret-color: red;
+      }
+      input::placeholder {
+        font-size: 10px;
+        color: blue; 
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pseudo Element Selector (::)</h1>
+    <p>PES is used to change the some part of HTML element.</p>
+    <p id="para">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum qui modi
+      pariatur ullam excepturi dolores architecto dicta quisquam possimus
+      exercitationem.
+    </p>
+    <hr />
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ul>
+    <hr />
+    <p id="para2">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor doloremque
+      veritatis assumenda. Repudiandae quam distinctio velit nisi id voluptatem,
+      voluptates cupiditate assumenda earum excepturi, sint aliquid consectetur?
+      Voluptates, vitae rerum. Rerum, eligendi maxime qui quas officiis
+      consectetur corporis assumenda sapiente optio error doloremque laboriosam
+      quo placeat facere libero explicabo sint suscipit repudiandae quia id,
+      repellat inventore accusantium magni. Fugit, eveniet. Voluptate inventore
+      tempora dolorem maxime optio enim laborum incidunt unde sequi, eius quod
+      provident? Reprehenderit officia iure, praesentium nulla inventore quidem?
+      Perferendis provident magnam eum ea eaque, unde repellendus atque.
+      Aliquid, nobis? Tempore ab amet expedita delectus magni nulla mollitia
+      consequatur, porro illo dolorem aliquid dolor ad itaque voluptas ut ipsam
+      eveniet voluptatibus? Sint blanditiis quidem esse perspiciatis illo
+      numquam. Quos beatae molestiae, distinctio eos rem veniam incidunt earum
+      ex consequatur, quasi reprehenderit nobis laudantium maxime, neque illum
+      provident debitis at doloribus quia placeat eaque repellat natus! Non,
+      quia illum.
+    </p>
+    <hr />
+    <label for="">FirstName:</label>
+    <input type="text" placeholder="Enter your firstname here" />
+  </body>
+</html>

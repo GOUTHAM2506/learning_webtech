@@ -1,0 +1,23 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+marquee {
+    background-color: black;
+    color: wheat;
+    height: 50px;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: mediumvioletred;
+    color: white;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+}

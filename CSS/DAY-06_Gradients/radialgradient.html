@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      .radial {
+        width: 700px;
+        height: 700px;
+        border: 2px solid gray;
+        margin-bottom: 30px;
+        /* border-radius: 100%; */
+        border-radius: 50%;
+      }
+      #radial1 {
+        background: radial-gradient(#fcbf49, #f77f00, #d62828);
+      }
+      #radial2 {
+        background: repeating-radial-gradient(black 2%, white 5%);
+      }
+      #radial3 {
+        background: repeating-radial-gradient(silver 20%, black 40%);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>2. Radial Gradient in CSS</h1>
+    <div class="radial" id="radial1"></div>
+    <div class="radial" id="radial2"></div>
+    <div class="radial" id="radial3"></div>
+  </body>
+</html>

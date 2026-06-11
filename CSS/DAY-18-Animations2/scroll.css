@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 30px;
+}
+.scroller {
+  width: 100%;
+  height: 200px;
+  /* border: 1px solid; */
+  background-color: #ddd;
+  overflow: hidden;
+}
+.scroller-track {
+  width: max-content;
+  height: 100%;
+  display: flex;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  animation: boxMoving 10s linear infinite;
+  overflow: hidden;
+}
+.logo {
+  width: 200px;
+  height: 150px;
+  /* border: 2px solid; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 7px 30px 0px rgba(100, 100, 111, 0.1);
+  margin: 0px 50px;
+}
+#logo1 {
+  background-image: url(https://www.agilysys.com/en/wp-content/uploads/2025/08/565cfcf8e3d21d17b48b0ab90067e19a042d3dbe.png);
+}
+#logo2 {
+  background-image: url(https://www.agilysys.com/en/wp-content/uploads/2025/08/0d6d94ba0de5a5f42e73034820a3b4a0c3cc6379.png);
+}
+#logo3 {
+  background-image: url(https://www.agilysys.com/en/wp-content/uploads/PH.png);
+}
+#logo4 {
+  background-image: url(https://www.agilysys.com/en/wp-content/uploads/GC.png);
+}
+#logo5 {
+  background-image: url(https://www.agilysys.com/en/wp-content/uploads/2025/08/Rectangle-4.png);
+}
+
+.scroller-track:hover{
+    animation-play-state: paused;
+}
+
+@keyframes boxMoving {
+    from {
+        transform: translateX(0%);
+    } 
+    to {
+        transform: translateX(-50%);
+    }
+}

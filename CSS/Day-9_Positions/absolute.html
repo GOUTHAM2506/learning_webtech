@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        color: white;
+        text-align: center;
+        line-height: 100px;
+      }
+      #box1 {
+        background-color: lightcoral;
+        position: absolute;
+        z-index: 4;
+      }
+      #box2 {
+        background-color: chocolate;
+        position: absolute;
+        z-index: 3;
+        left: 100%;
+      }
+      #box3 {
+        background-color: fuchsia;
+        position: absolute;
+        z-index: 2;
+        top: 100%;
+      }
+      #box4 {
+        background-color: darkred;
+        position: absolute;
+        z-index: 1;
+        left: 100%;
+        top: 100%;
+      }
+      #box5 {
+        background-color: mediumturquoise;
+        position: absolute;
+        z-index: 0;
+        left: 50%;
+        top: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="box" id="box1">Box-1</div>
+      <div class="box" id="box2">Box-2</div>
+      <div class="box" id="box3">Box-3</div>
+      <div class="box" id="box4">Box-4</div>
+      <div class="box" id="box5">Box-5</div>
+    </div>
+  </body>
+</html>

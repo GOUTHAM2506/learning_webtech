@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+.parent {
+  width: 550px;
+  height: 400px;
+  background-color: navajowhite;
+  display: flex;
+  /* flex-wrap: nowrap; */
+  /* flex-wrap: wrap; */
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+  /* flex-flow: flex-direction flex-wrap; */
+  gap: 10px;
+  /* gap: row-gap column-gap; */
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: crimson;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}

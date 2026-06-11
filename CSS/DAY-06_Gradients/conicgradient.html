@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .conic {
+        width: 500px;
+        height: 500px;
+        border: 1px solid black;
+        margin-bottom: 20px;
+        border-radius: 50%;
+      }
+
+      #conic1 {
+        background: conic-gradient(red, yellow, blue, red);
+      }
+
+      #conic2 {
+        background: conic-gradient(
+          violet 0deg 50deg,
+          indigo 50deg 100deg,
+          blue 100deg 150deg,
+          green 150deg 200deg,
+          yellow 200deg 250deg,
+          orange 250deg 300deg,
+          red 300deg 350deg
+        );
+      }
+
+      #conic3 {
+        border-radius: 0%;
+        background: conic-gradient(
+          red 0deg 45deg,
+          yellow 45deg 315deg,
+          red 315deg
+        );
+      }
+      #conic4 {
+        background: repeating-conic-gradient(
+          black 0deg 10deg,
+          white 10deg 20deg
+        );
+      }
+      #conic5 {
+        background: repeating-conic-gradient(
+          orange 0deg 10deg,
+          white 10deg 20deg,
+          green 20deg 30deg
+        );
+      }
+      #conic6 {
+        border-radius: 0%;
+        background: repeating-conic-gradient(
+          white 0deg 90deg,
+          black 90deg 180deg
+        );
+      }
+      #conic7 {
+        border-radius: 0%;
+        width: 50%;
+        background: conic-gradient(
+          at bottom left,
+          blue 0deg 18deg,
+          yellow 18deg 36deg,
+          red 36deg 54deg,
+          white 54deg 72deg,
+          green 72deg 90deg
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Conic Gradinet in CSS</h1>
+    <div class="conic" id="conic1"></div>
+    <div class="conic" id="conic2"></div>
+    <div class="conic" id="conic3"></div>
+    <div class="conic" id="conic4"></div>
+    <div class="conic" id="conic5"></div>
+    <div class="conic" id="conic6"></div>
+    <div class="conic" id="conic7"></div>
+  </body>
+</html>

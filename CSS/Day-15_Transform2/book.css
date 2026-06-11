@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 5000px;
+}
+.cover{
+    width: 30%;
+    height: 60vh;
+    position: absolute;
+    background-image: url("https://i.pinimg.com/736x/7b/3c/32/7b3c321e6f63ca0928409d6732f83fde.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    transition: all 0.3s;
+    transform-origin: 0% 0%;
+}
+.page1{
+    width: 30%;
+    height: 60vh;
+    background-image: url("https://i.pinimg.com/736x/ba/15/41/ba15411a30ff5504f7f23f4cb94279d5.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.cover:hover{
+    transform: rotateY(-180deg);
+}

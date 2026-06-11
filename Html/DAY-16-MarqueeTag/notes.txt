@@ -1,0 +1,87 @@
+# What is Marquee Tag in HTML?
+-> The <marquee> tag in HTML is used to create scrolling text or images on a webpage.
+-> The content can move:
+    Left
+    Right
+    Up
+    Down
+
+# Basic Syntax: <marquee behavior="" direction="">Content</marquee>
+Here, 
+1. direction Attribute:
+-> Used to change the movement direction.
+-> Values
+    1.left (default)
+    2.right
+    3.up
+    4.down
+
+-> Example: <marquee direction="right"> Moving Right </marquee>
+
+2. behavior Attribute:
+-> Defines how the content moves.
+-> Values:
+    Value	        Meaning
+    scroll => 	    Continuous scrolling
+    slide  =>	    Moves once and stops
+    alternate =>	Bounces back and forth
+
+-> Example: <marquee behavior="scroll"> Scrolling Text </marquee>
+
+3. scrollamount Attribute:
+-> Controls scrolling speed.
+    Higher value = Faster movement
+    Lower value = Slower movement
+-> Example:<marquee scrollamount="20"> Fast Text </marquee>
+
+4. scrolldelay Attribute:
+-> Adds delay between each movement.
+-> Example: <marquee scrolldelay="200"> Slow Movement </marquee>
+
+5. loop Attribute:
+-> Specifies how many times marquee repeats.
+-> Example: <marquee loop="3"> Repeats 3 Times </marquee>
+-> Example: <marquee loop="infinite"> Infinite Loop </marquee>
+
+6. bgcolor Attribute:
+-> Sets background color.
+-> Example: <marquee bgcolor="yellow">  Colored Background </marquee>
+
+7. width and height:
+-> Controls marquee size.
+-> Example: <marquee width="300" height="100"> Custom Size </marquee>
+
+8. hspace and vspace:
+-> Adds spacing around marquee.
+-> Example: <marquee hspace="20" vspace="20"> Spacing Example </marquee>
+
+# Marquee with Image:
+<marquee>
+  <img src="car.png" width="100">
+</marquee>
+
+# Multiple Marquee Example:
+<marquee direction="right" bgcolor="lightblue">
+  Welcome Students
+</marquee>
+
+<marquee direction="up" height="100">
+  HTML CSS JavaScript
+</marquee>
+
+<marquee behavior="alternate">
+  Frontend Development
+</marquee>
+
+# Important Note:
+-> <marquee> is a deprecated tag in HTML.
+Deprecated Meaning
+    Old feature
+    Not recommended to use
+    May not work in future browsers
+
+Modern websites use:
+    CSS Animations
+    JavaScript Animations
+
+-> instead of <marquee>.

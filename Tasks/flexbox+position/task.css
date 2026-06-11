@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+:root{
+--red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+--Grey_500: hsl(234, 12%, 34%);
+--Grey_400: hsl(212, 6%, 44%);
+--White: hsl(0, 0%, 100%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    text-align: center;
+    padding: 15px;
+    width: 40%;
+    margin: auto;
+    font-size: 15px;
+}
+body > div > h1:nth-child(1){
+    font-weight: 200;
+}
+body > div > h1:nth-child(2){
+    font-weight: 600;
+}
+main{
+    min-height: 75vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 15px;
+}
+.box{
+    width: 320px;
+    height: 240px;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0px 1px 7px 1px var(--Grey_400);
+}
+.content>h1{
+    font-weight: 600;
+}
+.content>p{
+    font-weight: 400;
+}
+.vertical{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.image{
+    width: 70px;
+    height: 70px;
+    background-color: green;
+    align-self: flex-end;
+}
+body > main > div:nth-child(1) 
+{
+    border-top: 5px solid var(--Cyan);
+}
+body > main > div.vertical > div:nth-child(1) {
+    border-top: 5px solid var(--red);
+}
+body > main > div.vertical > div:nth-child(2) {
+border-top: 5px solid var(--Orange);
+}
+body > main > div:nth-child(3) {
+border-top: 5px solid var(--Blue);
+}
+body > main > div:nth-child(1) > div.image {
+    background: url(./images/icon-supervisor.svg) no-repeat;
+}
+body > main > div.vertical > div:nth-child(1) > div.image {
+    background: url(./images/icon-team-builder.svg) no-repeat;
+}
+body > main > div.vertical > div:nth-child(2) > div.image {
+    background: url(./images/icon-karma.svg)no-repeat;
+}
+body > main > div:nth-child(3) > div.image {
+    background: url(./images/icon-calculator.svg) no-repeat;
+}

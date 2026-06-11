@@ -1,0 +1,145 @@
+# What is CSS Box Model?
+
+-> The CSS Box Model is a concept used in CSS to describe how every HTML element is displayed as a rectangular box.
+-> Each element on a webpage is treated like a box that contains: 1. Content 2. Padding 3. Border 4. Margin
+
+-> The box model helps us control:
+Spacing
+Size
+Layout
+Alignment of elements
+
+# Structure of CSS Box Model:
+
+-------------------------
+|         Margin          |
+|  ---------------------  |
+| |       Border        | |
+| |  -----------------  | |
+| | |     Padding     | | |
+| | |  -------------  | | |
+| | | |   Content   | | | |
+| | |  -------------  | | |
+| |  -----------------  | |
+|  ---------------------  |
+ -------------------------
+
+# 4 Main Components of CSS Box Model:
+
+-> There are 4 main components of box model are: 1. Content 2. Padding 3. Border 4. Margin
+
+1. Content:
+   -> The content area is the actual part where text, images, videos, or other elements appear.
+
+2. Padding:
+   -> The space between content and border is called as padding.
+   OR
+   -> The surrounding area of the content is called as padding.
+   -> It creates inner spacing inside the element.
+   -> Syntax: padding: value;
+   -> Individual Padding:
+   padding-top: 10px;
+   padding-right: 20px;
+   padding-bottom: 10px;
+   padding-left: 20px;
+
+-> padding is the shorthand property for the all 4 sides. 1. padding: 10px; // All side - TRBL (Top, Right, Bottom, Left) 2. padding: 10px 20px;
+First value - (Top Bottom), Second value - (Left Right)
+
+    3. padding: 10px 20px 30px;
+       First value - Top
+       Middle value - Left and Right
+       Third value - Bottom
+
+    4. padding: 10px 20px 30px 40px;
+       First value - Top
+       Second value - Right
+       Third value - Bottom
+       Fourth value - Left
+
+3. Border:
+   -> Border is the line surrounding padding and content.
+   -> Syntax: border: border-width border-style border-color;
+   -> Ex: border: 2px solid black;
+
+-> Different Border Styles:
+1.solid
+2.dashed
+3.dotted
+4.double
+5.groove
+6.ridge
+7.inset
+8.outset
+9.none
+
+4. Margin:
+   -> Margin is the space outside the border.
+   -> It creates space between elements.
+   -> Syntax: margin: value;
+
+-> Individual Margin:
+1.margin-top
+2.margin-right
+3.margin-bottom
+4.margin-left
+
+-> margin is the shorthand property for the all 4 sides. 1. margin: 10px; // All side - TRBL (Top, Right, Bottom, Left) 2. margin: 10px 20px;
+First value - (Top Bottom), Second value - (Left Right)
+
+    3. margin: 10px 20px 30px;
+       First value - Top
+       Middle value - Left and Right
+       Third value - Bottom
+
+    4. margin: 10px 20px 30px 40px;
+       First value - Top
+       Second value - Right
+       Third value - Bottom
+       Fourth value - Left
+
+# What is margin: auto?
+
+-> margin: auto is commonly used to center a block element horizontally.
+-> Conditions for margin:auto
+-> To work properly: 1. Element must be a block element 2. Width should be given
+
+# What is box-sizing Property?
+
+-> The box-sizing property defines how the total width and height of an element are calculated.
+-> We can control the size of the box.
+-> Syntax: box-sizzing: content-box (default value) | padding-box | border-box;
+
+-> Example: 1. box-sizzing: content-box (default value)
+Total Width = width + padding + border
+
+-> Example: 2. box-sizzing: border-box
+Total Width = content + padding + border
+
+# Why Developers Use border-box:
+
+-> Most developers use:
+
+- {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  -> Because it makes sizing easier and avoids layout issues.
+  -> It is also called as Reset Code.
+
+# What is border-radius Property?:
+
+-> The border-radius property is used to create rounded corners.
+-> Syntax: border-radius: value;
+
+-> Circle Example: border-radius: 50% or 100%;
+-> Individual Sides:
+1.border-top-left-radius
+2.border-top-right-radius
+3.border-bottom-right-radius
+4.border-bottom-left-radius
+
+-> Shorthand:
+border-radius: 10px 20px 30px 40px;
+Order: Top-left Top-right Bottom-right Bottom-left

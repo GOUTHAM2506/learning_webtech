@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100;200;300;400;500;600;800;900&display=swap);
+
+:root{
+--Gold500: hsl(31, 77%, 52%);
+--Cyan800: hsl(184, 100%, 22%);
+--Green950: hsl(179, 100%, 13%);
+--White: hsla(0, 0%, 100%, 0.75);
+--Gray100: hsl(0, 0%, 95%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    background-color: var(--Gray100);
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-items: center;
+}
+.box-container{
+    width: 270px;
+    height: 400px;
+    padding: 30px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#box-container1{
+    background-color: var(--Gold500);
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+#box-container2{
+    background-color: var(--Cyan800);
+}
+#box-container3{
+    background-color: var(--Green950);
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+h1{
+  font-family: 'Big Shoulders Text', display;
+  font-weight: 700;
+  color: var(--Gray100);
+}
+p{
+   font-family: 'Lexend Deca', sans-serif;
+   font-weight: 400;
+   color: var(--White);
+   line-height: 1.6;
+}
+button{
+    font-family: 'Lexend Deca', sans-serif;
+    width: 120px;
+    height: 45px;
+    border: transparent;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#box-container1 > div.button > button{
+    color: var(--Gold500);
+}
+#box-container2 > div.button > button{
+    color: var(--Cyan800);
+}
+#box-container3 > div.button > button{
+    color: var(--Green950);
+}
+#box-container1 > div.button > button:hover{
+    color: var(--Gray100);
+}
+#box-container2 > div.button > button:hover{
+    color: var(--Gray100);
+}
+#box-container3 > div.button > button:hover{
+    color: var(--Gray100);
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid var(--Gray100);
+}

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box model</title>
+    <style>
+      .box {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+      }
+      /*If we give single value -> for all sides */
+      #box1 {
+        padding: 20px;
+        margin: 30px;
+      }
+
+      /*If we give two values -> TopBottom RightLeft */
+      #box4 {
+        padding: 10px 20px;
+        margin: 30px;
+      }
+
+      /*If we give three values -> Top RightLeft Bottom */
+      #box3 {
+        padding: 10px 20px 30px;
+        margin: 30px;
+      }
+
+      /*If we give four values -> Top Right Bottom Left */
+      #box2 {
+        /* padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+        padding-left: 40px; */
+        padding: 10px 20px 30px 40px;
+        margin: 30px;
+      }
+
+      /* This is same applicable for marign also */
+    </style>
+  </head>
+  <body>
+    <h1>CSS Box Model</h1>
+    <div class="box" id="box1">Box-1</div>
+    <div class="box" id="box2">Box-2</div>
+    <div class="box" id="box3">Box-3</div>
+    <div class="box" id="box4">Box-4</div>
+    <div class="box" id="box5">Box-5</div>
+    <div class="box" id="box6">Box-6</div>
+    <div class="box" id="box7">Box-7</div>
+    <div class="box" id="box8">Box-8</div>
+    <div class="box" id="box9">Box-9</div>
+    <div class="box" id="box10">Box-10</div>
+  </body>
+</html>

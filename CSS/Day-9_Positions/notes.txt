@@ -1,0 +1,83 @@
+# What is Position in CSS?
+-> Position in CSS is used to control where an element should appear on the webpage.
+-> Normally, HTML elements come one below another automatically.
+-> Using position, we can move elements to different places.
+
+# Syntax:
+selector {
+    position: value;
+}
+
+# Types of Positions in CSS:
+-> There are mainly 5 types of positions:
+    1. static (default)
+    2. relative
+    3. absolute
+    4. fixed
+    5. sticky
+
+# Helping Properties used with position:
+-> These properties help to move elements:
+    1. top -> Move from top
+    2. bottom -> Move from bottom
+    3. left -> Move from left
+    4. right -> Move from right
+
+1. static Position:
+-> static is the default position of every HTML element.
+-> Elements stay in their normal place.
+-> top, left, right, bottom will NOT work.
+-> Syntax: position: static; (default)
+
+2. relative Position:
+-> Position relative means element stays in its normal place but we can move with the help of helping properties.
+-> It will take the reference from the original or previous position to move.
+-> Syntax: position: relative;
+
+3. absolute Position:
+-> Position absolute removes the element from normal document flow.
+-> The element moves relative to its nearest ancestor or positioned parent.
+-> A positioned parent means parent should have position:relative; value.
+-> Syntax: position: absolute;
+
+# Note: Whenever we provide `position: absolute` to an HTML element, the element comes to the front because it is removed from the normal document flow. It can overlap other elements.
+
+4. fixed position:
+-> The position fixed keeps the element fixed on the screen.
+-> Even when scrolling, the element stays in the same place.
+-> Mostly used for:
+    1. Navbar
+    2. Chat button
+    2. Back to top button
+-> Syntax: position: fixed;
+
+5. sticky position:
+-> The position sticky means it works like combination of relative and fixed.
+-> Initially behaves like relative.
+-> When scrolling reaches a point, it becomes fixed.
+-> Mostly used for:
+    1. Sticky Navbar
+    2. Stciky table header
+-> Syntax: position: sticky;
+
+# What is z-index?
+-> z-index controls which element appears on top.
+-> Basically it controls the stacking order in the z-index for the elements.
+-> Works only on positioned elements:
+    relative
+    absolute
+    fixed
+    sticky
+
+-> Syntax: z-index: value; 
+   Range: -∞ to +∞
+
+-> Higher z-index = appears on top.
+
+# Interview Questions:
+Q.1 What is difference between relative and absolute position?
+
+Q.2 What is difference between fixed and sticky position?
+
+Q.3 What is z-index Property?
+

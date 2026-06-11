@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .circle {
+        width: 600px;
+        height: 600px;
+        border: 1px solid;
+        margin: 20px auto;
+        background-color: coral;
+        /* transition-property: border-radius, background-color;
+        transition-duration: 1s;
+        transition-timing-function: linear; */
+        transition: all, 1s;
+      }
+      .circle:hover {
+        border-radius: 50%;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="circle"></div>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .circle {
+        width: 400px;
+        height: 400px;
+        border: 1px solid;
+        margin: 30px auto;
+        /* animation-name: colorchange;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: infinite; */
+        
+        animation: colorchange 3s ease-in infinite;
+      }
+      /* animation for color change */
+      @keyframes colorchange {
+        from {
+            background-color: red;
+            border-radius: 0%;
+        }
+        to {
+            background-color: blue;
+            border-radius: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Animations in CSS</h1>
+    <div class="circle"></div>
+  </body>
+</html>

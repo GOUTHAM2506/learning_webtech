@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+h1 {
+  color: wheat;
+  font-size: 100px;
+  animation:
+    typewriter 5s steps(25),
+    blink 1s ease infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0ch;
+  }
+  to {
+    width: 25ch;
+  }
+}
+@keyframes blink {
+  to {
+    border-right: 3px solid transparent;
+  }
+}

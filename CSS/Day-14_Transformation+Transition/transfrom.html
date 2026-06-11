@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: cornflowerblue;
+        font-size: 15px;
+        border-radius: 10px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        transition: all 1s linear;
+      }
+      #box1:hover {
+        transform: translate(300px, 100px);
+      }
+      #box2:hover {
+        transform: translateX(500px);
+      }
+      #box3:hover {
+        transform: TranslateY(-300px);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Transform Property in CSS</h1>
+    <div class="box" id="box1">Translate(x,y)</div>
+    <div class="box" id="box2">TranslateX(x)</div>
+    <div class="box" id="box3">TranslateY(y)</div>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      header {
+        width: 100%;
+        height: 80px;
+        background-color: white;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      aside {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        font-size: 40px;
+      }
+      span {
+        color: blue;
+      }
+      nav {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      a {
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        font-weight: 600;
+        color: blue;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      a:hover {
+        background-color: blue;
+        color: white;
+      }
+      .hamburger {
+        width: 20%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+      }
+      img {
+        width: 50px;
+        height: 50px;
+      }
+      @media screen and (max-width: 768px) {
+        header {
+          width: 100%;
+          height: 80px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0px 30px;
+        }
+        aside {
+          width: 50%;
+          /* border: 1px solid; */
+        }
+        h1 {
+          font-size: 25px;
+        }
+        nav {
+          display: none;
+        }
+        .hamburger {
+          display: block;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <aside>
+        <h1>My <span>Website</span></h1>
+      </aside>
+      <nav>
+        <a href="">Home</a>
+        <a href="">Login</a>
+        <a href="">Register</a>
+      </nav>
+      <div class="hamburger">
+        <img src="./image.png" alt="" />
+      </div>
+    </header>
+  </body>
+</html>

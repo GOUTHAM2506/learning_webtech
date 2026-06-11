@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      .parent {
+        width: 100%;
+        height: 500px;
+        border: 1px solid;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .box {
+        width: 300px;
+        height: 300px;
+        background-color: teal;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid white;
+      }
+
+      .box:nth-child(1){
+        align-self: flex-start;
+      }
+      .box:nth-child(2) {
+        flex-basis: 500px;
+        /* Sets the initial width for the child items */
+      }
+      .box:nth-child(3){
+        align-self: flex-end;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <h1>Flex Child Property: flex-basis and align-self</h1>
+    <div class="parent">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+  </body>
+</html>
