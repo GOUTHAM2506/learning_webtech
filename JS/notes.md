@@ -376,6 +376,3 @@ undefined
 2. Block Scope
 
 3. Function Scope or Local Scope
-
-
-
